@@ -68,14 +68,21 @@ break;
   public static void task4() {
     System.out.println("Задача 4");
     int deliveryDistance = 95;
-    if (deliveryDistance == 20){
-        System.out.println("Потребуется дней: 1");
-            if (deliveryDistance >=20 || deliveryDistance <=60){
-                System.out.println("Потребуется дней: 2");
+    int time=-1;
+    if (deliveryDistance <= 20) {
+        time = 1;
+
+    }else if (deliveryDistance>20 && deliveryDistance<=60) {
+        time = 2;
+
+    }else if (deliveryDistance>60 && deliveryDistance <=100){
+        time=3;
+
             }
+    System.out.println("Потребуется дней:"+time);
         }
 
-}
+
  public static void task5(){
         System.out.println("Задача 5");
      int monthNumber=12;
